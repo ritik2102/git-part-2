@@ -67,13 +67,21 @@ items[1].style.fontWeight="bold";
 items[1].style.backgroundColor="yellow";
 
 // Won't work as we will be working with an array here
+// Gives an error
 // items.style.backgroundColor="#f4f4f4";
 // As a solution we will have to iterate using a for loop
 
+// for(let i=0;i<items.length; i++ ) {
+//     items[i].style.backgroundColor="yellow";
+// }
+
+items[2].style.backgroundColor="green";
+
 for(let i=0;i<items.length; i++ ) {
-    items[i].style.backgroundColor="yellow";
+    items[i].style.fontWeight="bold";
 }
 
-
-
-
+const newItem=document.getElementsByClassName('new');
+console.log(newItem);
+newItem[0].style.backgroundColor="blue";
+newItem[0].style.fontWeight="normal";
