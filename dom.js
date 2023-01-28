@@ -81,5 +81,8 @@ for(let i=0;i<items.length; i++ ) {
     items[i].style.fontWeight="bold";
 }
 
-
+const newItem=document.getElementsByClassName('new');
+console.log(newItem);
+newItem[0].style.backgroundColor="blue";
+newItem[0].style.fontWeight="normal";
 
